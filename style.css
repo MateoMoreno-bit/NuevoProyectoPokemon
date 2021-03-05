@@ -99,7 +99,7 @@ body{
 .carrousel{
     width: 100%;
     overflow: auto;
-    padding: 30px;
+    padding-left: 20px;
     position: relative;
 }
 .carrousel__container{
@@ -169,6 +169,12 @@ body{
 
 @media (max-width: 660px)
 {
+    .carrousel{
+        width: 100%;
+        overflow: auto;
+        padding-left: 5px;
+        position: relative;
+    }
     .carrousel-item{
         position: relative;
         left: 8px;
@@ -199,6 +205,12 @@ body{
 
 @media (max-width: 460px)
 {
+    .carrousel{
+        width: 100%;
+        overflow: auto;
+        padding-left: 5px;
+        position: relative;
+    }
     .carrousel-item{
         position: relative;
         left: 8px;
