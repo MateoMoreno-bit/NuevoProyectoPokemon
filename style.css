@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Mulish', sans-serif;
+}
+/* header */
+.header{
+    background-image: url("images/pokemon-secret-club-wallpaper-nov142019.jpg");
+    background-color: #cccccc;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img{
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.header__menu{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    margin-right: 30px;
+    border-radius: 25px;
+}
+.header__menu ul{
+    
+    display: none; 
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -14px;
+}
+.header__menu:hover ul, ul:hover{
+    
+    display: block;
+}
+.header__menu li{
+    margin: 10px 0px;
+}
+.header__menu li a{
+    color: black;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    border-radius: 25px;
+    text-decoration: none;
+}
+.header__menu li a:hover{
+    text-decoration: underline;
+}
+.header__menu--profile{
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+.header__menu--profile img{
+    margin-right: 8px;
+    width: 40px;
+}
+.header__menu--profile p{
+    margin: 0px;
+    color: black;
+}
+.main{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.main__title{
+    color: black;
+    font-size: 25px;
+    display: flex;
+}
+.input{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid black;
+    border-radius: 27px;
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+    outline: none;
+}
+::placeholder{
+    color: black;
+}
+
+/* carusel */
+.carrousel{
+    width: 100%;
+    overflow: auto;
+    padding: 30px;
+    position: relative;
+}
+.carrousel__container{
+    white-space: wrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+.carrousel-item{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+.carrousel-item:hover ~ .carrousel-item{
+    transform: translate3d(100px, 0, 0);
+}
+.carrousel-item:hover .carrousel-item__details{
+    opacity: 1;
+}
+.carrousel__container:hover .carrousel-item{
+    opacity: 0.3;
+}
+.carrousel__container:hover .carrousel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carrousel-item__img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* iamgen se acopla */
+}
+.carrousel-item__details{
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%,  rgba(0,0,0,0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 68%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.carrousel-item__details img{
+    width: 40px;
+    height: 20px;
+}
+
+.carrousel-item__details--title{
+    border: 0px;
+    color: white;
+    margin: 3px 0px;
+}
+.carrousel-item__details--subtitle{
+    color: white;
+    font-size: 8px;
+    margin: 3px 0px;
+}
