@@ -167,9 +167,41 @@ body{
     margin: 3px 0px;
 }
 
+@media (max-width: 660px)
+{
+    .carrousel-item{
+        position: relative;
+        left: 15px;
+        width: 180px;
+        height: 200px;
+        background-size: contain;
+    }
+    .carrousel-item__img{
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 110px;
+        height: 110px;
+        object-fit: cover; /* iamgen se acopla */
+    }
+    .carrousel-item__details{
+        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%,  rgba(0,0,0,0) 100%);
+        font-size: 10px;
+        opacity: 0;
+        transition: 450ms opacity;
+        margin-top: -10px;
+        position: absolute;
+        top: 68%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
 @media (max-width: 460px)
 {
     .carrousel-item{
+        position: relative;
+        left: 15px;
         width: 180px;
         height: 200px;
         background-size: contain;
