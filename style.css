@@ -171,7 +171,7 @@ body{
 {
     .carrousel-item{
         position: relative;
-        left: 15px;
+        left: 8px;
         width: 180px;
         height: 200px;
         background-size: contain;
