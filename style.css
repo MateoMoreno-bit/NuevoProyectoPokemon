@@ -167,11 +167,11 @@ body{
     margin: 3px 0px;
 }
 
-@media (max-width: 630px)
+@media (max-width: 460px)
 {
     .carrousel-item{
-        width: 165px;
-        height: 190px;
+        width: 180px;
+        height: 200px;
         background-size: contain;
     }
     .carrousel-item__img{
